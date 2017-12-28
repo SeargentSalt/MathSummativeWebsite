@@ -11,6 +11,28 @@ body{
   margin:auto;
   overflow:hidden;
 }
+.three-inline{
+  display: inline-block;
+  width: 45%;
+}
+
+.sub-list{
+  margin: 0px 0px 0px 40px;
+  padding-left: 0px;
+}
+
+.sub-sub-list{
+  margin: 0px 0px 0px 80px; 
+  padding-left: 0px;
+}
+.no-link-hightlight:visited{
+  color: black;
+}
+
+.equation{
+  font-family: "Cambria Math";
+  font-style: italic;
+}
 
 ul{
   margin:0;
@@ -120,18 +142,18 @@ header a:hover{
 }
 
 /* Boxes */
-#boxes{
+.boxes{
   margin-top:20px;
 }
 
-#boxes .box{
+.boxes .box{
   float:left;
   text-align: center;
   width:30%;
   padding:10px;
 }
 
-#boxes .box img{
+.boxes .box img{
   height:130px;
 }
 
@@ -166,6 +188,20 @@ ul.transformation li img{
   width: 100px;
 }
 
+#center-equation{
+  text-align: center;
+}
+
+ul.transformation li .box-subtitle{
+  padding-left: 30px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+
+
 /* Page-Title */
 #main-col h1 {
   font-size: 30px;
@@ -186,12 +222,19 @@ footer{
   header nav li,
   #learn h1,
   #learn form,
-  #boxes .box,
+  .boxes .box,
   article#main-col,
   aside#sidebar{
     float:none;
     text-align:center;
     width:100%;
+  }
+  
+  @media(max-width: 768px){
+    .three-inline{
+      text-align: left;
+      width: 100%;
+    }
   }
 
   header{
