@@ -11,9 +11,22 @@ body{
   margin:auto;
   overflow:hidden;
 }
+
+.list-title{
+  margin-bottom: 0px;
+}
+
+.list-image img{
+  width: 300px;
+}
+
+.list-image{
+  text-align: center;
+}
+
 .three-inline{
   display: inline-block;
-  width: 45%;
+  width: 40%;
 }
 
 .sub-list{
@@ -54,6 +67,19 @@ ul{
   color:#ffffff;
   margin-top:10px;
   margin-bottom:10px;
+}
+
+/* Id */
+#pythagorean{
+  width: 160px;
+}
+
+#CompoundAnglePic{
+  width: 600px;
+}
+
+#Transformation-Equation{
+  width: 600px;
 }
 
 /* Header **/
@@ -153,8 +179,8 @@ header a:hover{
   padding:10px;
 }
 
-.boxes .box img{
-  height:130px;
+.box img{
+  height: 130px;
 }
 
 /* Sidebar */
@@ -175,8 +201,8 @@ article#main-col{
   width:100%;
 }
 
-/* transformation */
-ul.transformation li{
+/* page-list */
+ul.page-list li{
   list-style: none;
   padding:20px;
   border: #cccccc solid 1px;
@@ -184,15 +210,12 @@ ul.transformation li{
   background:#e6e6e6;
 }
 
-ul.transformation li img{
-  width: 100px;
-}
 
 #center-equation{
   text-align: center;
 }
 
-ul.transformation li .box-subtitle{
+ul.page-list li .box-subtitle{
   padding-left: 30px;
   padding-bottom: 0px;
   margin-bottom: 0px;
@@ -237,6 +260,12 @@ footer{
     }
   }
 
+  @media(max-width: 768px){
+    .list-image{
+      margin: 0%;
+    }
+  }
+
   header{
     padding-bottom:20px;
   }
@@ -255,3 +284,4 @@ footer{
     margin-bottom:5px;
   }
 }
+
